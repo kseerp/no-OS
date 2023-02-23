@@ -55,8 +55,8 @@
 
 #ifdef IIO_SUPPORT
 #define INTC_DEVICE_ID  0
-#define UART_IRQ_ID     UART0_IRQn
 #endif
+#define UART_IRQ_ID     UART0_IRQn
 #define UART_DEVICE_ID  0
 #define UART_BAUDRATE   57600
 #define UART_OPS        &max_uart_ops
@@ -65,5 +65,6 @@
 #define I2C_OPS         &max_i2c_ops
 
 extern struct max_uart_init_param xuip;
+extern struct max_i2c_init_param adt7420_i2c_extra;
 
 #endif /* __PARAMETERS_H__ */

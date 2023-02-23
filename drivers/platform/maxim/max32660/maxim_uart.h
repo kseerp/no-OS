@@ -44,6 +44,7 @@
 #include "no_os_irq.h"
 #include "max32660.h"
 #include "no_os_uart.h"
+#include "gpio.h"
 
 /**
  * @brief UART flow control
@@ -59,6 +60,7 @@ enum max_uart_flow_ctrl {
  */
 struct max_uart_init_param {
 	enum max_uart_flow_ctrl flow;
+	mxc_gpio_vssel_t vssel;
 };
 
 /**
